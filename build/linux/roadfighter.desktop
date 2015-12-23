@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Road Fighter
+Comment=Death race between you and a group of crazy drivers
+Exec=roadfighter
+Icon=roadfighter.png
+Terminal=false
+Type=Application
+Categories=Application;Game;ArcadeGame;
+StartupNotify=false

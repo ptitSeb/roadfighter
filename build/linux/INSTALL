@@ -1,0 +1,14 @@
+Dependencies:
+ SDL
+ SDL_image
+ SDL_mixer
+ SDL_sound
+ SDL_ttf
+
+On Ubuntu you can get all necessary packages by typing:
+ sudo apt-get install g++ make libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-sound1.2-dev libsdl-ttf2.0-dev
+
+Copy the Makefile in the build/linux directory to the top directory.
+(The one where there's all the subdirs, including 'src')
+From there you can 'make' and 'make install'.
+
