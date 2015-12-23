@@ -37,7 +37,7 @@ OBJS = \
 	$(SRC)/main.o
 
 CC = g++
-CFLAGS = -g3 -O3 `sdl-config --cflags` -I/usr/X11R6/include
+CFLAGS = -mcpu=cortex-a8 -mfpu=neon -mfloat-abi=softfp -fsingle-precision-constant -g -Ofast `sdl-config --cflags` -I/usr/X11R6/include
 LDFLAGS = `sdl-config --libs` -L/usr/X11R6/lib/ -lSDL_image -lSDL_mixer -lSDL_sound -lSDL_ttf
 RM = rm -f
 CP = cp -r

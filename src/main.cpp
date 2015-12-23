@@ -94,6 +94,7 @@ SDL_Surface* initializeSDL(int moreflags)
 				 SDL_GetVideoSurface()->format->BitsPerPixel);
 	    if (fullscreen) output_debug_message(",fullscreen");
 	    output_debug_message("\n");
+	    SDL_ShowCursor(SDL_DISABLE);
     } /* if */ 
 
 	TTF_Init();

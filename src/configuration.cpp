@@ -72,7 +72,8 @@ void CRoadFighter::default_configuration(void)
 {
 	left_key=SDLK_LEFT;
 	right_key=SDLK_RIGHT;
-	fire_key=SDLK_SPACE;
+        fire_key=SDLK_PAGEDOWN;
+	/*fire_key=SDLK_SPACE;*/
 
 	left2_key=SDLK_a;
 	right2_key=SDLK_d;
