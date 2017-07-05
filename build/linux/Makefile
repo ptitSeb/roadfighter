@@ -58,7 +58,7 @@ all: $(EXE)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(EXE): $(OBJS)
-	$(CC) $(LDFLAGS) $^ -o $@
+	$(CC) $^ -o $@ $(LDFLAGS)
 	@$(STRIP) $@
 	@$(ECHO) " o If there are no errors, the game compiled succesfully"
 
