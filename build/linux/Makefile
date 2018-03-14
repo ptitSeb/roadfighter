@@ -38,11 +38,11 @@ OBJS = \
 
 CC = g++
 ifeq ($(ODROID),1)
- CFLAGS = -mcpu=cortex-a9 -mfpu=neon -mfloat-abi=hard -ftree-vectorize -fsingle-precision-constant -g -Ofast `sdl-config --cflags` -I/usr/X11R6/include
+ CFLAGS = -DODROID -mcpu=cortex-a9 -mfpu=neon -mfloat-abi=hard -ftree-vectorize -fsingle-precision-constant -g -Ofast `sdl-config --cflags` -I/usr/X11R6/include
 else ifeq ($(LINUX),1)
  CFLAGS = -mcpu=native -Ofast `sdl-config --cflags` -I/usr/X11R6/include
 else
- CFLAGS = -mcpu=cortex-a8 -mfpu=neon -mfloat-abi=softfp -ftree-vectorize -fsingle-precision-constant -g -Ofast `sdl-config --cflags` -I/usr/X11R6/include
+ CFLAGS = -DPANDORA -mcpu=cortex-a8 -mfpu=neon -mfloat-abi=softfp -ftree-vectorize -fsingle-precision-constant -g -Ofast `sdl-config --cflags` -I/usr/X11R6/include
 endif
 LDFLAGS = `sdl-config --libs` -L/usr/X11R6/lib/ -lSDL_image -lSDL_mixer -lSDL_sound -lSDL_ttf
 RM = rm -f
