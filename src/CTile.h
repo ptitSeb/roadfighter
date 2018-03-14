@@ -16,9 +16,9 @@ public:
 	void draw_mask(int x,int y,SDL_Surface *dest);
 	void draw_collision_mask(int x,int y,SDL_Surface *dest);
 
-	void draw_scaled(int x,int y,SDL_Surface *dest,float scale);
+	void draw_scaled(int x,int y,SDL_Surface *dest,float scale); //unused
 	void draw_shaded(int x,int y,SDL_Surface *dest,int factor,int r,int g,int b,int a);
-	void draw_bicolor(int x,int y,SDL_Surface *dest,int factor,int r1,int g1,int b1,int a1,int r2,int g2,int b2,int a2);
+	void draw_bicolor(int x,int y,SDL_Surface *dest,int factor,int r1,int g1,int b1,int a1,int r2,int g2,int b2,int a2); //unused
 
 	void clear(void);
 	void free(void);

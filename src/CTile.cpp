@@ -145,21 +145,6 @@ void CTile::draw_bicolor(int x,int y,SDL_Surface *dest,int factor,int r1,int g1,
 void CTile::draw_scaled(int x,int y,SDL_Surface *dest,float scale)
 {
 	if (orig!=0) sge_transform(orig,dest,0,scale,scale,0,0,x,y,0);
-
-/*
-	if (orig!=0) {
-		SDL_Rect d;
-		SDL_Surface *res=zoomSurface(orig, scale, scale, 0);
-		
-		d.x=x;
-		d.y=y;
-		d.w=res->w;
-		d.h=res->h;
-		SDL_BlitSurface(res,0,dest,&d);
-
-		SDL_FreeSurface(res);
-	}
-*/ 
 } /* CTile::draw_scaled */ 
 
 
