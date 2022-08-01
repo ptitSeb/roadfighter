@@ -3,7 +3,7 @@ roadfighter
 
 ![roadfighter build status](https://api.travis-ci.org/ptitSeb/roadfighter.png "roadfighter build status")
 
-This version of RoadBlaster from BrainGames as been slightly modified. It now support Pandora and ODROID build.
+This version of roadfighter as been slightly modified. It now support Pandora and ODROID build.
 To compile on the Pandora, using the Codeblocks Command Line PND, just type
 `make`
 
